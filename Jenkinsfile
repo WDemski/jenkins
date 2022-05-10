@@ -4,7 +4,7 @@ pipeline {
     environment {
         scannerHome = tool 'SonarQube'
         SONARQUBE_TOKEN = credentials('SONARQUBE_TOKEN')
-        DOCKER_HUB_PASSWORD = credentials('12dd7f66-4f99-489c-8feb-27ce1005bf9e')
+        DOCKER_HUB_PASSWORD = credentials('DOCKER_HUB_PASSWORD')
     }
 
     stages {
