@@ -8,6 +8,11 @@ pipeline {
     }
 
     stages {
+        stage('Clear running apps') {
+            steps {
+                sh 'docker rm -f devops_flask_app || true'
+            }
+        }
 
         stage('Sonarqube analysis frontend') {
             steps {
